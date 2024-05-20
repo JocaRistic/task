@@ -1,0 +1,64 @@
+<form [formGroup]="signupForm" (ngSubmit)="signUp()" class="form">
+  <div class="example-container">
+    <mat-form-field class="input">
+      <mat-label>Unesite ime</mat-label>
+      <input matInput placeholder="Ime" formControlName="name" required />
+      @if (signupForm.controls['name'].invalid) {
+      <mat-error>Ime nije validno</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite prezime</mat-label>
+      <input
+        matInput
+        placeholder="Prezime"
+        formControlName="surname"
+        required
+      />
+      @if (signupForm.controls['surname'].invalid) {
+      <mat-error>Prezime nije validno</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite email</mat-label>
+      <input
+        matInput
+        placeholder="pat@example.com"
+        formControlName="email"
+        required
+      />
+      @if (signupForm.controls['email'].invalid) {
+      <mat-error>Email nije validan</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite broj telefona</mat-label>
+      <input
+        matInput
+        placeholder="061111111"
+        formControlName="phone"
+        required
+      />
+      @if (signupForm.controls['phone'].invalid) {
+      <mat-error>Broj nije validan</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite password</mat-label>
+      <input
+        matInput
+        placeholder=""
+        formControlName="password"
+        type="password"
+        required
+      />
+      @if (signupForm.controls['password'].invalid) {
+      <mat-error>Password nije validan</mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <button mat-flat-button type="submit" [disabled]="signupForm.invalid">
+    Sign up
+  </button>
+  <button mat-flat-button matDialogClose>Close</button>
+</form>

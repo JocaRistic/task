@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jovica",
+      "surname": "Ristic",
+      "email": "jocaristic5@gmail.com",
+      "phone": "0612370340",
+      "password": "Joca.123"
+    },
+    {
+      "id": 2,
+      "name": "Ime",
+      "surname": "Prezime",
+      "email": "email@gmail.com",
+      "phone": "0611111111",
+      "password": "Sifra.123"
+    },
+    {
+      "id": "6e18",
+      "name": "Ana",
+      "surname": "Ristic",
+      "email": "ana@gmail.com",
+      "phone": "ana@gmail.com",
+      "password": "Ana.123"
+    }
+  ],
+  "clients": [
+    {
+      "id": 2,
+      "name": "Ime",
+      "surname": "Prezime",
+      "email": "email@gmail.com",
+      "phone": "0611111111"
+    },
+    {
+      "id": "c812",
+      "name": "Jovica",
+      "surname": "Ristic",
+      "email": "jocaristic5@gmail.com",
+      "phone": "0612370340"
+    }
+  ]
+}

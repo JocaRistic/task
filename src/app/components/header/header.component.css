@@ -1,0 +1,27 @@
+.header {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}

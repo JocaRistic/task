@@ -1,0 +1,31 @@
+/* .myclients-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.form-container {
+  width: 50rem;
+  padding: 5rem 10rem;
+  margin: 0 auto;
+}
+
+.input {
+  display: block;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.table {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.table td,
+th {
+  font-size: 20px;
+}

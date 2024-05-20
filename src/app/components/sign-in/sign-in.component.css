@@ -1,0 +1,20 @@
+.signin-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 50rem;
+  padding: 5rem 10rem;
+}
+
+.input {
+  display: block;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 2rem;
+}

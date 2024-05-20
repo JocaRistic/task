@@ -1,0 +1,50 @@
+<form [formGroup]="updateForm" (ngSubmit)="updateClient()" class="form">
+  <div class="example-container">
+    <mat-form-field class="input">
+      <mat-label>Unesite ime</mat-label>
+      <input matInput placeholder="Ime" formControlName="name" required />
+      @if (updateForm.controls['name'].invalid) {
+      <mat-error>Ime nije validno</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite prezime</mat-label>
+      <input
+        matInput
+        placeholder="Prezime"
+        formControlName="surname"
+        required
+      />
+      @if (updateForm.controls['surname'].invalid) {
+      <mat-error>Prezime nije validno</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite email</mat-label>
+      <input
+        matInput
+        placeholder="pat@example.com"
+        formControlName="email"
+        required
+      />
+      @if (updateForm.controls['email'].invalid) {
+      <mat-error>Email nije validan</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input">
+      <mat-label>Unesite broj telefona</mat-label>
+      <input
+        matInput
+        placeholder="061111111"
+        formControlName="phone"
+        required
+      />
+      @if (updateForm.controls['phone'].invalid) {
+      <mat-error>Broj nije validan</mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <button mat-flat-button type="submit" [disabled]="updateForm.invalid">
+    Update client
+  </button>
+</form>
